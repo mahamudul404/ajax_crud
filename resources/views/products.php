@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ajax Crud</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 </head>
 
 <body>
@@ -13,7 +14,7 @@
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8">
-                <h2>Laravel 11 Ajax Crud</h2>
+                <h2 class="text-center my-5">Laravel 11 Ajax Crud</h2>
                 <div class="table-data">
 
                     <table class="table table-bordered">
@@ -32,7 +33,7 @@
                                 <td>Otto</td>
                                 <td>@mdo</td>
                             </tr>
-                           
+
                         </tbody>
                     </table>
 
