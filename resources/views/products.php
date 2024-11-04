@@ -19,7 +19,7 @@
 
                     <table class="table table-bordered">
                         <thead>
-                            <tr>
+                            <tr class="text-center">
                                 <th scope="col">#</th>
                                 <th scope="col">Name</th>
                                 <th scope="col">Price</th>
@@ -27,11 +27,14 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr class="text-center">
                                 <th scope="row">1</th>
                                 <td>Mark</td>
                                 <td>Otto</td>
-                                <td>@mdo</td>
+                                <td class="text-center">
+                                    <a class="btn btn-primary " href=""> <i class="las la-edit"></i></a>
+                                    <a class="btn btn-danger" href=""> <i class="las la-trash"></i></a>
+                                </td>
                             </tr>
 
                         </tbody>
