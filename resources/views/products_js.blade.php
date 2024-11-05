@@ -15,6 +15,24 @@
 
     <script>
         $(document).ready(function() {
-            // alert('hello');
+            $(document).on('click', '.add_product', function(e) {
+                e.preventDefault();
+                let name = $('#name').val();
+                let price = $('#price').val();
+
+                $.ajax({
+                    url: "{{ route('add.product') }}",
+                    type: "POST",
+                    data: {
+                        name: name,
+                        price: price
+                    }
+                }).done(function(data) {
+                    console.log(data);
+                    window.location.reload();
+                });
+
+            })
+
         });
     </script>

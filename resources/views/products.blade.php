@@ -16,7 +16,7 @@
             <div class="col-md-2"></div>
             <div class="col-md-8">
                 <h2 class="text-center my-5">Laravel 11 Ajax Crud</h2>
-                <a class="btn btn-success my-3" data-bs-toggle="modal" data-bs-target="#exampleModal" href="">Add Product</a>
+                <a class="btn btn-success my-3" data-bs-toggle="modal" data-bs-target="#addModal" href="">Add Product</a>
                 <div class="table-data">
 
                     <table class="table table-bordered">
