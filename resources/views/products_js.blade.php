@@ -26,11 +26,18 @@
                     data: {
                         name: name,
                         price: price
+                    },
+                    
+                    success: function(response) {
+                        console.log(response);
                     }
                 }).done(function(data) {
                     console.log(data);
                     window.location.reload();
+
+
                 });
+
 
             })
 

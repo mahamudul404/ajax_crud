@@ -34,9 +34,10 @@
                         <tbody>
                             @foreach ($products as $product)
                                 <tr class="text-center">
+
                                     <th scope="row"> {{ $product->id }} </th>
                                     <td> {{ $product->name }} </td>
-                                    <td>  {{ $product->price }}</td>
+                                    <td> {{ $product->price }}</td>
                                     <td class="text-center">
                                         <a class="btn btn-primary " href=""> <i class="las la-edit"></i></a>
                                         <a class="btn btn-danger" href=""> <i class="las la-trash"></i></a>
@@ -45,6 +46,9 @@
                             @endforeach
                         </tbody>
                     </table>
+                    <div class="d-flex justify-content-center">
+                        {{ $products->links('pagination::bootstrap-5') }}
+                    </div>
 
                 </div>
             </div>
