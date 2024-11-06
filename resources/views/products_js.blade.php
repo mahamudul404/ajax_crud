@@ -14,32 +14,44 @@
     </script>
 
     <script>
+        //    add products not reloated page
+
         $(document).ready(function() {
             $(document).on('click', '.add_product', function(e) {
                 e.preventDefault();
                 let name = $('#name').val();
                 let price = $('#price').val();
-
                 $.ajax({
                     url: "{{ route('add.product') }}",
-                    type: "POST",
+                    method: "POST",
                     data: {
                         name: name,
                         price: price
                     },
-                    
-                    success: function(response) {
-                        console.log(response);
-                    }
-                }).done(function(data) {
-                    console.log(data);
-                    window.location.reload();
 
+                    success: function(data) {
+                        console.log(data);
+                        $('#addModal').modal('hide');
+                        $('#addProduct')[0].reset();
+                        $('body').removeClass('modal-open');
+                        $('.modal-backdrop').remove();
+                        // add data without reload page
+
+                        $('.table').load(location.href + ' .table');
+
+
+                    },
+
+
+
+                    error: function(err) {
+                        console.log(err)
+
+                    }
 
                 });
 
-
             })
 
-        });
+        })
     </script>

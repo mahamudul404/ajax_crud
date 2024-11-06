@@ -18,12 +18,18 @@ class ProductController extends Controller
         $request->validate([
             'name' => 'required',
             'price' => 'required',
-        ]);
+        ],
+    [
+        'name.required' => 'Product name is required',
+        'price.required' => 'Product price is required',
+    ]
+
+    );
 
         $product = new Product();
         $product->name = $request->name;
         $product->price = $request->price;
         $product->save();
-        return redirect()->route('products.index');
+        return response()->json(['status' => 'success']);
     }
 }
