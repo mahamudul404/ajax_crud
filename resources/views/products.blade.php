@@ -39,7 +39,7 @@
                                     <td> {{ $product->name }} </td>
                                     <td> {{ $product->price }}</td>
                                     <td class="text-center">
-                                        <a class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#updateModal"
+                                        <a class="btn btn-primary update_product_form " data-bs-toggle="modal" data-bs-target="#updateModal"
                                             data-id="{{ $product->id }}" data-name="{{ $product->name }}"
                                             data-price="{{ $product->price }}">
                                             <i class="las la-edit"></i></a>
