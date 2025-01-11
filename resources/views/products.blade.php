@@ -39,11 +39,12 @@
                                     <td> {{ $product->name }} </td>
                                     <td> {{ $product->price }}</td>
                                     <td class="text-center">
-                                        <a class="btn btn-primary update_product_form " data-bs-toggle="modal" data-bs-target="#updateModal"
-                                            data-id="{{ $product->id }}" data-name="{{ $product->name }}"
-                                            data-price="{{ $product->price }}">
+                                        <a class="btn btn-primary update_product_form " data-bs-toggle="modal"
+                                            data-bs-target="#updateModal" data-id="{{ $product->id }}"
+                                            data-name="{{ $product->name }}" data-price="{{ $product->price }}">
                                             <i class="las la-edit"></i></a>
-                                        <a class="btn btn-danger" href=""> <i class="las la-trash"></i></a>
+                                        <a class="btn btn-danger" data-id="{{ $product->id }}" href=""> <i
+                                                class="las la-trash"></i></a>
                                     </td>
                                 </tr>
                             @endforeach
